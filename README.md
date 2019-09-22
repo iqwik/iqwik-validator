@@ -5,7 +5,7 @@
 <pre><code><script type="text/javascript" src="./js/iqwik-validator.min.js"></script></code></pre>
 
 <h3>Live Example</h3>
-<p><a href="https://iqwik.github.io/iqwik-validator/" rel="nofollow">Live example</a></p>
+<p><a href="https://iqwik.github.io/iqwik-validator/" rel="nofollow" target="_blank">Live example</a></p>
 
 <h3>Usage</h3>
 <p>Add data-attributes to fields<br/>example:</p>
