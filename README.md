@@ -1,7 +1,7 @@
 <h1>Form iQwik Validator Plugin</h1>
 
 <h3>Prerequisites</h3>
-<p>jQuery <a href="http://jquery.com/download/" rel="nofollow">http://jquery.com/download/</a></p>
+<p>jQuery <a href="http://jquery.com/download/" rel="nofollow" target="_blank">http://jquery.com/download/</a></p>
 <pre><code><script type="text/javascript" src="./js/iqwik-validator.min.js"></script></code></pre>
 
 <h3>Live Example</h3>
