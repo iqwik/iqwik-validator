@@ -33,7 +33,7 @@
     <tr>
       <td><strong>data-req</strong></td>
       <td>Boolean</td>
-      <td>True / False (true = required; false = none)</td>
+      <td>true => required</td>
     </tr>
     <tr>
       <td><strong>data-type</strong></td>
