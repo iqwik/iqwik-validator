@@ -8,10 +8,15 @@
 <p><a href="https://iqwik.github.io/iqwik-validator/" rel="nofollow">Live example</a></p>
 
 <h3>Usage</h3>
+<p>Add data-attributes to fields<br/>example:</p>
 <pre>
 <code>
-   <input type="text" data-req="true" data-type="name" data-err-text="Name is required">
-  $('#form').iqwikValidator();
+   &lt;input type="text" data-req="true" data-err-text="Field is required"&gt;   
+   &lt;input type="text" data-req="true" data-type="name" data-err-text="Name is required"&gt;   
+   &lt;input type="text" data-req="true" data-type="phone" data-err-text="Phone is required"&gt;   
+   &lt;input type="text" data-req="true" data-type="email" data-err-text="E-mail is required"&gt;
+<br/>
+   $('#form').iqwikValidator();
 </code>
 </pre>
 
