@@ -11,6 +11,6 @@
   "author": "Artem Zubarev",
   "license": "ISC",
   "dependencies": {
-    "jquery": "1.12.3"
+    "jquery": ">=1.12.3"
   }
 }
