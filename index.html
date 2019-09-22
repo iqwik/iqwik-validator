@@ -2,26 +2,42 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Form Validate Plugin</title>
+    <title>Form iQwik Validator Plugin</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/iqwik-validator.min.js"></script>
 </head>
 <body>
-<form id="form" action="">
-    <fieldset>
-        <input type="text" name="name" placeholder="Имя" data-req="true" data-type="name" data-err-text="Введите имя"/>
-    </fieldset>
-    <fieldset>
-        <input type="text" name="phone" placeholder="Телефон" data-req="true" data-type="phone" data-err-text="Введите телефон"/>
-    </fieldset>
-    <fieldset>
-        <input type="text" name="email" placeholder="E-mail" data-req="true" data-type="email" data-err-text="Введите E-mail">
-    </fieldset>
-    <fieldset>
-        <textarea name="textarea" placeholder="Ваше сообщение" data-req="true" data-err-text="Необходиом заполнить поле"></textarea>
-    </fieldset>
-    <button type="submit">Отправить</button>
-</form>
+<div class="container well">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Form iQwik Validator Plugin</h1><br/>
+        </div>
+    </div>
+</div>
+<div class="container well">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+            <form id="form" action="">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Имя" data-req="true" data-type="name" data-err-text="Введите имя" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="+7-XXX-XXX-XXXX" data-req="true" data-type="phone" data-err-text="Введите телефон" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="E-mail" data-req="true" data-type="email" data-err-text="Введите E-mail" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <textarea name="textarea" placeholder="Ваше сообщение" data-req="true" data-err-text="Необходиом заполнить поле" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
 <script>
     jQuery(document).ready(function ($) {
         $('#form').iqwikValidator();
