@@ -1,0 +1,16 @@
+{
+  "name": "form-validator",
+  "description": ".",
+  "version": "1.0.0",
+  "homepage": "https://github.com/iqwik/form-validator",
+  "main": "js/iqwik-validator.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iqwik/form-validator.git"
+  },
+  "author": "Artem Zubarev",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "1.12.3"
+  }
+}
