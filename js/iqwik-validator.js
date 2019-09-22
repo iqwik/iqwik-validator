@@ -1,3 +1,6 @@
+/* author: Artem Zubarev
+ *  git: https://github.com/iqwik/iqwik-validator/
+ */
 (function($){
     $.fn.iqwikValidator = function(options) {
         var settings = $.extend( {
