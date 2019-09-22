@@ -2,6 +2,7 @@
 
 <h3>Prerequisites</h3>
 <p>jQuery <a href="http://jquery.com/download/" rel="nofollow">http://jquery.com/download/</a></p>
+<pre><code><script type="text/javascript" src="./js/iqwik-validator.min.js"></script></code></pre>
 
 <h3>Live Example</h3>
 <p><a href="https://iqwik.github.io/iqwik-validator/" rel="nofollow">Live example</a></p>
