@@ -49,7 +49,7 @@
 </table>
 
 <h3>Parameters (Patterns)</h3>
-<p>You may change default patterns for custom check fields</p>
+<p>You may change default patterns</p>
 <table>
   <thead>
     <tr>
@@ -76,5 +76,5 @@
     </tr>
   </tbody>
 </table>
-<p>example</p>
+<p>example:</p>
 <pre><code>$('#form').iqwikValidator({text: /^([\w|\d]|\s){3,}$/i});</code></pre>
