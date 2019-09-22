@@ -8,7 +8,12 @@
 <p><a href="https://iqwik.github.io/iqwik-validator/" rel="nofollow">Live example</a></p>
 
 <h3>Usage</h3>
-<pre><code>$('#form').iqwikValidator();</code></pre>
+<pre>
+<code>
+   <input type="text" data-req="true" data-type="name" data-err-text="Name is required">
+  $('#form').iqwikValidator();
+</code>
+</pre>
 
 <h3>Data-Attributes</h3>
 <table>
