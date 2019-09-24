@@ -36,6 +36,10 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+            <code>
+                <p>Initialization:</p>
+                $('#form').iqwikValidator();
+            </code>
         </div>
         <div class="col-lg-6">
 <code class="_width">
@@ -95,6 +99,15 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+            <code>
+                <p>Initialization:</p>
+                $('#form2').iqwikValidator({
+                    errorClass: false,
+                    onSubmit: function(e){
+                        alert($(e).serialize());
+                    }
+                });
+            </code>
         </div>
         <div class="col-lg-6">
 <code class="_width">
@@ -154,10 +167,7 @@
         var $this = $(this);
         $this.removeClass('full--width');
     }
-    var sendForm = function(e){
-        var $this = $(e);
-        alert($this.serialize());
-    }
+    var sendForm = function(e){ alert($(e).serialize()); }
 </script>
 </body>
 </html>
