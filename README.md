@@ -97,4 +97,12 @@
   </tbody>
 </table>
 <p>example:</p>
-<pre><code>$('#form').iqwikValidator({text: /^([\w|\d]|\s){3,}$/i});</code></pre>
+<pre><code>
+   $('#form').iqwikValidator({
+      text: /^([\w|\d]|\s){3,}$/i, 
+      errorClass: false,
+      onSubmit: function(e){
+        alert($(e).serialize());
+    }
+   });
+            </code></pre>
