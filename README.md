@@ -17,6 +17,15 @@
    &lt;input type="text" data-req="true" data-type="email" data-err-text="E-mail is required"&gt;
 <br/>
    $('#form').iqwikValidator();
+<br/>  
+<p><b>and styles...</b></p>
+   .error-border {
+       border-color: red;
+   }
+   .error {
+       color: red;
+       font-size: 14px;
+   }
 </code>
 </pre>
 
