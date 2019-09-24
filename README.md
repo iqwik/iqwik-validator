@@ -103,6 +103,6 @@
       errorClass: false,
       onSubmit: function(e){
         alert($(e).serialize());
-    }
+      }
    });
             </code></pre>
