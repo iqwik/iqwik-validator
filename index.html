@@ -18,34 +18,146 @@
     </div>
 </div>
 <div class="container well">
-    <div class="row justify-content-md-center">
-        <div class="col col-lg-6">
+    <h2>Example 1</h2>
+    <div class="row">
+        <div class="col-lg-6">
             <form id="form" action="">
                 <div class="form-group">
-                    <code>data-req="true" data-type="name" data-err-text="Name is required"</code>
                     <input type="text" name="name" placeholder="Name" data-req="true" data-type="name" data-err-text="Name is required" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <code>data-req="true" data-type="phone" data-err-text="Phone is required"</code>
                     <input type="text" name="phone" placeholder="+7-XXX-XXX-XXXX" data-req="true" data-type="phone" data-err-text="Phone is required" class="form-control"/>
                 </div>
                 <div class="form-group">
-                    <code>data-req="true" data-type="email" data-err-text="E-mail is required"</code>
                     <input type="text" name="email" placeholder="E-mail" data-req="true" data-type="email" data-err-text="E-mail is required" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <code>data-req="true" data-err-text="Field is required"</code>
                     <textarea name="textarea" placeholder="Your message" data-req="true" data-err-text="Field is required" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+        </div>
+        <div class="col-lg-6">
+<code class="_width">
+<pre>
+&lt;form id="form" action=""&gt;
+    &lt;div class="form-group"&gt;
+        &lt;input type="text" name="name" placeholder="Name" <b style="color:red">data-req="true" data-type="name" data-err-text="Name is required"</b> class="form-control"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;input type="text" name="phone" placeholder="+7-XXX-XXX-XXXX" <b style="color:red">data-req="true" data-type="phone" data-err-text="Phone is required"</b> class="form-control"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;input type="text" name="email" placeholder="E-mail" <b style="color:red">data-req="true" data-type="email" data-err-text="E-mail is required"</b> class="form-control"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;textarea name="textarea" placeholder="Your message" <b style="color:red">data-req="true" data-err-text="Field is required"</b> class="form-control">&lt/textarea&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+</code>
+        </div>
+    </div>
+</div>
+<div class="container well _form2">
+    <h2>Example 2</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <form id="form2" action="">
+                <div class="form-group">
+                    <div class="form-control _in" data-err-class="name">
+                        <input type="text" id="name" name="name" data-req="true" data-type="name" data-err-text="Name is required"/>
+                        <label for="name">Your Name</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-control _in" data-err-class="phone">
+                        <input type="text" id="phone" name="phone" placeholder="+7-XXX-XXX-XXXX" data-req="true" data-type="phone" data-err-text="Phone is required"/>
+                        <label for="phone">Your Phone</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-control _in" data-err-class="email">
+                        <input type="text" id="email" name="email" data-req="true" data-type="email" data-err-text="E-mail is required"/>
+                        <label for="email">Your E-mail</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-control _in" data-err-class="text">
+                        <input type="text" name="text" id="text" data-req="true" data-err-text="Field is required"/>
+                        <label for="text">Your Message</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="agreement" id="agreement" data-req="true" data-err-text="Required agreement"/>
+                    <label for="agreement" data-err-class="agreement">Yes, I'm agree...</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-6">
+<code class="_width">
+<pre>
+&lt;form id="form2" action=""&gt;
+    &lt;div class="form-group"&gt;
+        &lt;div class="form-control _in" <b style="color:red">data-err-class="name"</b>&gt;
+            &lt;input type="text" id="name" <b style="color:red">name="name" data-req="true" data-type="name" data-err-text="Name is required"</b>/&gt;
+            &lt;label for="name"&gt;Your Name&lt;/label&gt;
+        &lt;/div>
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;div class="form-control _in" <b style="color:red">data-err-class="phone"</b>&gt;
+            &lt;input type="text" id="phone" placeholder="+7-XXX-XXX-XXXX" <b style="color:red">name="phone" data-req="true" data-type="phone" data-err-text="Phone is required"</b>/&gt;
+            &lt;label for="phone"&gt;Your Phone&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;div class="form-control _in" <b style="color:red">data-err-class="email"</b>&gt;
+            &lt;input type="text" id="email" <b style="color:red">name="email" data-req="true" data-type="email" data-err-text="E-mail is required"</b>/&gt;
+            &lt;label for="email"&gt;Your E-mail&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;div class="form-control _in" <b style="color:red">data-err-class="text"</b>&gt;
+            &lt;input type="text" id="text" <b style="color:red">name="text" data-req="true" data-err-text="Field is required"</b>/&gt;
+            &lt;label for="text"&gt;Your Message&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;input type="checkbox" id="agreement" <b style="color:red">name="agreement" data-req="true" data-err-text="Required agreement"</b>/&gt;
+        &lt;label for="agreement" <b style="color:red">data-err-class="agreement"</b>&gt;Yes, I'm agree...&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+</code>
         </div>
     </div>
 </div>
 <script>
     jQuery(document).ready(function ($) {
         $('#form').iqwikValidator();
+        $('#form2').iqwikValidator({
+            errorClass: false,
+            onSubmit: sendForm
+        });
+
+        $('._width').on('mouseenter', increaseWidth).on('mouseleave', reduceWidth);
     });
+
+    function increaseWidth(){
+        var $this = $(this);
+        $this.addClass('full--width');
+    }
+    function reduceWidth(){
+        var $this = $(this);
+        $this.removeClass('full--width');
+    }
+    var sendForm = function(e){
+        var $this = $(e);
+        alert($this.serialize());
+    }
 </script>
 </body>
 </html>

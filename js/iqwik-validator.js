@@ -3,7 +3,7 @@
         var settings = $.extend( {
             text        : /^([\S]{1,}).+/i,
             name        : /^([а-яА-ЯёЁa-zA-Z]){2,}$/i,
-            phone       : /^\+7[(]\d{3}[)]\d{3}[-]\d{2}[-]\d{2}$/,
+            phone       : /^\+7[-]\d{3}[-]\d{3}[-]\d{4}$/,
             email       : /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.(org|com|co|net|io|ru)$/i,
             errorClass  : true,
             onSubmit    : undefined
@@ -15,20 +15,25 @@
             var type = $this.data('type');
             var pattern = typeof type !== 'undefined' && typeof settings[type] !== 'undefined' ? settings[type] : settings.text;
             var errorText = $this.data('err-text');
+            var value = $this.val();
             if($this.data('req') === true) {
                 result = false;
-                if(!pattern.test($this.val())){
-                    if(settings.errorClass === true) {
+
+                if($this.context.type === 'checkbox'){
+                    value = $this.is(':checked') ? 'okey' : '';
+                }
+
+                if (! pattern.test(value) ) {
+                    if (settings.errorClass === true) {
                         $this.addClass('error-border');
                         if ($this.siblings('.error').length < 1) {
                             $('<span class="error">' + errorText + '</span>').insertAfter($this);
                         } else {
                             $this.siblings('.error').html(errorText);
                         }
-
                     } else {
                         var name = $this.attr('name');
-                        var $data = $('[data-err-class="'+name+'"]');
+                        var $data = $('[data-err-class="' + name + '"]');
                         $data.addClass('error-border');
                         if ($data.siblings('.error').length < 1) {
                             $('<div class="error">' + errorText + '</div>').insertAfter($data);
@@ -36,9 +41,11 @@
                             $data.siblings('.error').html(errorText);
                         }
                     }
-                    if(errors.indexOf(errorText) === -1) {
+
+                    if (errors.indexOf(errorText) === -1) {
                         errors.push(errorText);
                     }
+
                 } else {
                     if(settings.errorClass === true) {
                         $this.removeClass('error-border');
