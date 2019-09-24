@@ -35,11 +35,11 @@
                     <textarea name="textarea" placeholder="Your message" data-req="true" data-err-text="Field is required" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <code>
-                <p>Initialization:</p>
-                $('#form').iqwikValidator();
-            </code>
+            </form><br>
+<pre><code>
+<p><b>Initialization:</b></p>
+$('#form').iqwikValidator();
+</code></pre>
         </div>
         <div class="col-lg-6">
 <code class="_width">
@@ -98,16 +98,16 @@
                     <label for="agreement" data-err-class="agreement">Yes, I'm agree...</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <code>
-                <p>Initialization:</p>
-                $('#form2').iqwikValidator({
-                    errorClass: false,
-                    onSubmit: function(e){
-                        alert($(e).serialize());
-                    }
-                });
-            </code>
+            </form><br>
+<pre><code>
+<p><b>Initialization:</b></p>
+$('#form2').iqwikValidator({
+    errorClass: false,
+    onSubmit: function(e){
+        alert($(e).serialize());
+    }
+});
+</code></pre>
         </div>
         <div class="col-lg-6">
 <code class="_width">
