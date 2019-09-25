@@ -96,7 +96,7 @@
      <tr>
       <td><strong>errorClass</strong></td>
       <td>Boolean</td>
-      <td>change default selector for error class (default => true)</td>
+      <td>Change default selector for error class, should be FALSE (default => TRUE)</td>
      </tr>
      <tr>
       <td><strong>onSubmit</strong></td>
